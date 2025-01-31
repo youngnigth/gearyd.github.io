@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GearupYD</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Repuestos Únicos al Mejor Precio</h1>
+        <p>Conseguimos para ti esas partes que no encuentras localmente</p>
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Productos</a>
+        <a href="#">Contacto</a>
+        <a href="#">Sobre Nosotros</a>
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </nav>
+    <div class="cart-overlay" id="cart-overlay">
+        <div class="cart">
+            <h2>Carrito de Compras</h2>
+            <div class="cart-items" id="cart-items">
+                <!-- Aquí se mostrarán los productos agregados -->
+            </div>
+            <div class="cart-total">
+                <strong>Total: $<span id="cart-total">0.00</span></strong>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">Checkout</button>
+            <button class="close-btn" onclick="toggleCart()">Cerrar</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="side-bar">
+            <img src="imagenes/01.webp" alt="">
+            <img src="imagenes/02.webp" alt="">
+        </div>
+        <div class="main-content">
+            <div class="product">
+                <img src="imagenes/break.webp" alt="Honda Break Pads">
+                <div>
+                    <h2>Honda Break Pads 8,9 Gen</h2>
+                    <p>Especial para high performance. Disponibilidad exclusiva y envío rápido.</p>
+                    <p><strong>Precio: $150.00</strong></p>
+                    <button onclick="addToCart('Honda Break Pads', 150.00)">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="suspension-especial.jpg" alt="Sistema de Suspensión de Alto Rendimiento">
+                <div>
+                    <h2>Sistema de Suspensión de Alto Rendimiento</h2>
+                    <p>Ideal para modelos de lujo. Ofrecemos precios competitivos y garantía.</p>
+                    <p><strong>Precio: $300.00</strong></p>
+                    <button onclick="addToCart('Sistema de Suspensión', 300.00)">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="side-bar">
+            <img src="imagenes/03.webp" alt="">
+            <img src="imagenes/04.webp" alt="">
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Tienda Exclusiva de Repuestos. Envíos internacionales a precios inigualables.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
