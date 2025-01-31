@@ -1,71 +1,114 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GearupYD</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GearYD</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Add Google Fonts or custom fonts here -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Repuestos Únicos al Mejor Precio</h1>
-        <p>Conseguimos para ti esas partes que no encuentras localmente</p>
-    </header>
+  <!-- Header -->
+  <header>
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Productos</a>
-        <a href="#">Contacto</a>
-        <a href="#">Sobre Nosotros</a>
-        <div class="cart-icon" onclick="toggleCart()">
-            🛒 <span id="cart-count">0</span>
-        </div>
+      <div class="logo">OEM/ODM CE Advanced Beautiful multifunction Wall Switch with USB A+C & 2 US power</div>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+      </ul>
+      <a href="https://buy.stripe.com/28o9CRfa8b0PaMo000" class="cta-button">Get it Now</a>
     </nav>
-    <div class="cart-overlay" id="cart-overlay">
-        <div class="cart">
-            <h2>Carrito de Compras</h2>
-            <div class="cart-items" id="cart-items">
-                <!-- Aquí se mostrarán los productos agregados -->
-            </div>
-            <div class="cart-total">
-                <strong>Total: $<span id="cart-total">0.00</span></strong>
-            </div>
-            <button class="checkout-btn" onclick="checkout()">Checkout</button>
-            <button class="close-btn" onclick="toggleCart()">Cerrar</button>
-        </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Elevate Your Everyday with MyProduct</h1>
+      <p>Sleek, durable, and designed for modern living.</p>
+      <a href="#" class="cta-button">Shop Now</a>
     </div>
-    <div class="container">
-        <div class="side-bar">
-            <img src="imagenes/01.webp" alt="">
-            <img src="imagenes/02.webp" alt="">
-        </div>
-        <div class="main-content">
-            <div class="product">
-                <img src="imagenes/break.webp" alt="Honda Break Pads">
-                <div>
-                    <h2>Honda Break Pads 8,9 Gen</h2>
-                    <p>Especial para high performance. Disponibilidad exclusiva y envío rápido.</p>
-                    <p><strong>Precio: $150.00</strong></p>
-                    <button onclick="addToCart('Honda Break Pads', 150.00)">Agregar al Carrito</button>
-                </div>
-            </div>
-            <div class="product">
-                <img src="suspension-especial.jpg" alt="Sistema de Suspensión de Alto Rendimiento">
-                <div>
-                    <h2>Sistema de Suspensión de Alto Rendimiento</h2>
-                    <p>Ideal para modelos de lujo. Ofrecemos precios competitivos y garantía.</p>
-                    <p><strong>Precio: $300.00</strong></p>
-                    <button onclick="addToCart('Sistema de Suspensión', 300.00)">Agregar al Carrito</button>
-                </div>
-            </div>
-        </div>
-        <div class="side-bar">
-            <img src="imagenes/03.webp" alt="">
-            <img src="imagenes/04.webp" alt="">
-        </div>
+    <div class="hero-image">
+      <img src="assets/images/product-image.png" alt="MyProduct">
     </div>
-    <footer>
-        <p>&copy; 2025 Tienda Exclusiva de Repuestos. Envíos internacionales a precios inigualables.</p>
-    </footer>
-    <script src="scripts.js"></script>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <h2>Why Choose MyProduct?</h2>
+    <div class="feature-cards">
+      <div class="card">
+        <img src="assets/icons/design-icon.svg" alt="Design Icon">
+        <h3>Sleek Design</h3>
+        <p>Minimalist and modern aesthetics.</p>
+      </div>
+      <div class="card">
+        <img src="assets/icons/eco-icon.svg" alt="Eco Icon">
+        <h3>Eco-Friendly</h3>
+        <p>Made with sustainable materials.</p>
+      </div>
+      <div class="card">
+        <img src="assets/icons/warranty-icon.svg" alt="Warranty Icon">
+        <h3>30-Day Warranty</h3>
+        <p>Hassle-free returns and repairs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section id="benefits" class="benefits">
+    <div class="benefits-content">
+      <h2>Transform Your Everyday</h2>
+      <ul>
+        <li>Ergonomic design for comfort.</li>
+        <li>Built to last with premium materials.</li>
+        <li>Enhances productivity and style.</li>
+      </ul>
+    </div>
+    <div class="benefits-image">
+      <img src="assets/images/product-in-use.jpg" alt="Product in Use">
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <h2>What Our Customers Are Saying</h2>
+    <div class="testimonial-cards">
+      <div class="card">
+        <p>"This product changed my life! Highly recommend it."</p>
+        <h4>- Jane Doe</h4>
+      </div>
+      <div class="card">
+        <p>"Great quality and excellent customer service."</p>
+        <h4>- John Smith</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="final-cta">
+    <h2>Ready to Elevate Your Everyday?</h2>
+    <p>Join thousands of happy customers today.</p>
+    <a href="#" class="cta-button">Get Yours Now</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="logo">MyProduct</div>
+      <ul class="footer-links">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+      <div class="social-icons">
+        <a href="#"><img src="assets/icons/facebook-icon.svg" alt="Facebook"></a>
+        <a href="#"><img src="assets/icons/twitter-icon.svg" alt="Twitter"></a>
+        <a href="#"><img src="assets/icons/instagram-icon.svg" alt="Instagram"></a>
+      </div>
+    </div>
+    <p class="copyright">© 2023 MyProduct. All rights reserved.</p>
+  </footer>
 </body>
 </html>
